@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import * as firebase from "firebase";
 import {
   StyleSheet,
-  Text,
   View,
   FlatList,
   Alert,
@@ -26,6 +25,7 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
 export default function App() {
   const [todos, setTodos] = useState([]);
   useEffect(() => {
